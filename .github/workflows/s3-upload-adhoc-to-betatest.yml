@@ -1,0 +1,17 @@
+name: Upload to S3
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: ls
+      run: |
+        echo 'hello'
+        echo ls -la
